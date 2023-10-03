@@ -22,7 +22,7 @@ from threestudio.utils.typing import *
 class MultiviewDiffusionGuidance(BaseModule):
     @dataclass
     class Config(BaseModule.Config):
-        model_name: str = "sd-v1.5-4view" # check mvdream.model_zoo.PRETRAINED_MODELS
+        model_name: str = "sd-v2.1-base-4view" # check mvdream.model_zoo.PRETRAINED_MODELS
         ckpt_path: Optional[str] = None # path to local checkpoint (None for loading from url)
         guidance_scale: float = 50.0
         grad_clip: Optional[
